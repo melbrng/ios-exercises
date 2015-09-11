@@ -14,24 +14,29 @@
     
     NSMutableString *numberString =[[NSMutableString alloc]init];
     
-    NSInteger number1;
-    NSInteger number2;
+    NSInteger minimumValue;
+    NSInteger maximumValue;
     
-    
-    if (number < otherNumber) {
+    //assign the minimum and maximum numeric values from given numbers
+    //increase maximum value by 1 for inclusion in for loop
+    if (number < otherNumber)
+    {
         
-        number1 = number;
-        number2 = otherNumber+1;
-        
-    } else {
-        
-        number1 = otherNumber;
-        number2 = number+1;
+        minimumValue = number;
+        maximumValue = ( otherNumber+1 );
         
     }
     
+    else
+    {
+        
+        minimumValue = otherNumber;
+        maximumValue = ( number+1 );
+        
+    }
     
-    for(NSInteger n = number1; n < number2 ; n++) {
+    //create a string of ordered values in ascending order
+    for(NSInteger n = minimumValue; n < maximumValue ; n++) {
         
         NSString *new = [NSString stringWithFormat:@"%ld",(long)n ];
         
