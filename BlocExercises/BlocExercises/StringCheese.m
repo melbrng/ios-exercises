@@ -13,18 +13,27 @@
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
     
     NSString *favoriteCheeseString = [NSString stringWithFormat:@"My favorite cheese is %@.",cheeseName];
+    
     return favoriteCheeseString;
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
+    
+    //replace " cheese" suffix with blank
 
-    if ([[cheeseName lowercaseString] hasSuffix:@" cheese"]) {
+    if ([[cheeseName lowercaseString] hasSuffix:@" cheese"])
+    {
         
         NSRange cheeseRange = [[cheeseName lowercaseString] rangeOfString:@" cheese"];
+        
         NSString *newCheeseName =[cheeseName stringByReplacingCharactersInRange:cheeseRange withString:@""];
+        
         return newCheeseName;
         
-    } else {
+    }
+    
+    else
+    {
         
         return cheeseName;
         
@@ -33,15 +42,26 @@
 }
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
-    if (cheeseCount == 1) {
+    
+    
+    //set the appropriate plural/singular case
+    
+    if (cheeseCount == 1)
+    {
 
         NSString *returnString = [NSString stringWithFormat:@"%ld cheese",cheeseCount];
+        
         return returnString;
         
-    } else {
+    }
+    
+    else
+    {
         
         NSString *returnString = [NSString stringWithFormat:@"%ld cheeses",cheeseCount];
+        
         return returnString;
+        
     }
 
 }
