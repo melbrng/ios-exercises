@@ -12,7 +12,7 @@
 
 - (BOOL) switchesFromBlackAndWhiteToColor {
 
-    return NO;
+    return YES;
 }
 
 - (NSString *) mainCharacter {
