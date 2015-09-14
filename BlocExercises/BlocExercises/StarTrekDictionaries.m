@@ -43,7 +43,7 @@
     
     if(!( quoteValue ))
     {
-        [quoteDictionary setObject:@"quote" forKey:@""];
+        [quoteDictionary setObject:@"A memorable quote." forKey:@"quote"];
     }
     
     return quoteDictionary;
