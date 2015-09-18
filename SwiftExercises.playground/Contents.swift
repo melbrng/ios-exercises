@@ -7,7 +7,8 @@ Strings
 */
 
 // Make fullSentence say "My favorite cheese is cheddar."
-func favoriteCheeseStringWithCheese(cheese: String) -> String {
+func favoriteCheeseStringWithCheese(cheese: String) -> String
+{
     let cheese = "My favorite cheese is " + cheese
     return cheese
 }
@@ -46,14 +47,16 @@ Loops
 */
 
 // Use a closed range loop to print 1 - 10, inclusively
-for i in 1...10 {
-    print("\(i)")
+for i in 1...10
+{
+    i
 }
 
 
 // Use a half-closed range loop to print 1 - 10, inclusively
-for i in 1..<11 {
-    println(i)
+for i in 1..<11
+{
+    i
 }
 
 
@@ -72,16 +75,20 @@ let picard = [
 
 let characters = [worf, picard]
 
-func favoriteDrinksArrayForCharacters(characters:[[String : String]]) -> [String] {
+func favoriteDrinksArrayForCharacters(characters:[[String : String]]) -> [String]
+{
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     var drink : String?
     var drinks = [String]()
     
     for character in characters
     {
+        
         if let drink = character["favorite drink"]
         {
+            
             drinks.append(drink)
+            
         }
     }
     
@@ -100,17 +107,22 @@ Optionals
 
 */
 
-func emailFromUserDict(userDict : [String : String]) -> String {
+func emailFromUserDict(userDict : [String : String]) -> String
+{
     // Return the user's email address from userDict, or return "" if they don't have one
     var email : String?
     
     if let email = userDict["email"]
     {
+        
         return email
+        
     }
     else
     {
+        
         return ""
+        
     }
 }
 
@@ -134,7 +146,8 @@ Functions
 
 let strings = ["milk", "eggs", "bread", "challah"]
 
-func printGroceryList(groceries:[String]) -> String {
+func printGroceryList(groceries:[String]) -> String
+{
     
     var groceryList = ""
     
