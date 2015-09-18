@@ -26,7 +26,7 @@
                                 <rect key="frame" x="32" y="66" width="536" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIs-x0-D43">
-                                <rect key="frame" x="31" y="175" width="538" height="21"/>
+                                <rect key="frame" x="244" y="175" width="113" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -44,12 +44,12 @@
                         <constraints>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="width" secondItem="kbz-vi-bvX" secondAttribute="width" id="3oc-g9-GcM"/>
                             <constraint firstItem="CIs-x0-D43" firstAttribute="top" secondItem="H5E-uD-sgb" secondAttribute="bottom" constant="18" id="5Aa-IQ-2KH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CIs-x0-D43" secondAttribute="trailing" constant="15" id="98k-NR-wMi"/>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9bR-1E-Pjk"/>
-                            <constraint firstItem="CIs-x0-D43" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="GaF-Y3-fE9"/>
+                            <constraint firstItem="H5E-uD-sgb" firstAttribute="width" secondItem="CIs-x0-D43" secondAttribute="width" id="DgS-mb-oKA"/>
                             <constraint firstItem="H5E-uD-sgb" firstAttribute="top" secondItem="kbz-vi-bvX" secondAttribute="bottom" constant="16" id="JP5-wd-WBa"/>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="LyQ-wg-XQU"/>
                             <constraint firstItem="kbz-vi-bvX" firstAttribute="top" secondItem="h1d-r2-Nj8" secondAttribute="bottom" constant="8" id="T47-e6-SyD"/>
+                            <constraint firstItem="CIs-x0-D43" firstAttribute="centerX" secondItem="H5E-uD-sgb" secondAttribute="centerX" id="cYj-JF-8Dp"/>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="centerX" secondItem="kbz-vi-bvX" secondAttribute="centerX" constant="-0.5" id="ngy-MA-X3c"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h1d-r2-Nj8" secondAttribute="trailing" constant="18" id="z0E-4D-ruR"/>
                             <constraint firstItem="H5E-uD-sgb" firstAttribute="centerX" secondItem="kbz-vi-bvX" secondAttribute="centerX" constant="0.5" id="zff-FB-1WP"/>
