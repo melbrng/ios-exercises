@@ -17,6 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-r2-Nj8">
+                                <rect key="frame" x="34" y="28" width="532" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="kbz-vi-bvX">
+                                <rect key="frame" x="32" y="66" width="536" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIs-x0-D43">
+                                <rect key="frame" x="31" y="175" width="538" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5E-uD-sgb">
                                 <rect key="frame" x="244" y="112" width="113" height="45"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
@@ -24,35 +38,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content per Beer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-r2-Nj8">
-                                <rect key="frame" x="34" y="28" width="532" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="kbz-vi-bvX">
-                                <rect key="frame" x="140" y="66" width="321" height="31"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIs-x0-D43">
-                                <rect key="frame" x="279" y="175" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="h1d-r2-Nj8" firstAttribute="width" secondItem="kbz-vi-bvX" secondAttribute="width" constant="215" id="3oc-g9-GcM"/>
-                            <constraint firstItem="H5E-uD-sgb" firstAttribute="top" secondItem="kbz-vi-bvX" secondAttribute="bottom" constant="16" id="3pA-ty-hWK"/>
+                            <constraint firstItem="h1d-r2-Nj8" firstAttribute="width" secondItem="kbz-vi-bvX" secondAttribute="width" id="3oc-g9-GcM"/>
+                            <constraint firstItem="CIs-x0-D43" firstAttribute="top" secondItem="H5E-uD-sgb" secondAttribute="bottom" constant="18" id="5Aa-IQ-2KH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CIs-x0-D43" secondAttribute="trailing" constant="15" id="98k-NR-wMi"/>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9bR-1E-Pjk"/>
-                            <constraint firstItem="H5E-uD-sgb" firstAttribute="centerX" secondItem="kbz-vi-bvX" secondAttribute="centerX" constant="-0.5" id="Cql-wz-afP"/>
+                            <constraint firstItem="CIs-x0-D43" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="GaF-Y3-fE9"/>
+                            <constraint firstItem="H5E-uD-sgb" firstAttribute="top" secondItem="kbz-vi-bvX" secondAttribute="bottom" constant="16" id="JP5-wd-WBa"/>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="LyQ-wg-XQU"/>
                             <constraint firstItem="kbz-vi-bvX" firstAttribute="top" secondItem="h1d-r2-Nj8" secondAttribute="bottom" constant="8" id="T47-e6-SyD"/>
                             <constraint firstItem="h1d-r2-Nj8" firstAttribute="centerX" secondItem="kbz-vi-bvX" secondAttribute="centerX" constant="-0.5" id="ngy-MA-X3c"/>
-                            <constraint firstItem="CIs-x0-D43" firstAttribute="top" secondItem="H5E-uD-sgb" secondAttribute="bottom" constant="18" id="pKL-O0-WS2"/>
-                            <constraint firstItem="CIs-x0-D43" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="263" id="wHC-gq-izu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CIs-x0-D43" secondAttribute="trailing" constant="263" id="xTG-jc-dgQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h1d-r2-Nj8" secondAttribute="trailing" constant="18" id="z0E-4D-ruR"/>
+                            <constraint firstItem="H5E-uD-sgb" firstAttribute="centerX" secondItem="kbz-vi-bvX" secondAttribute="centerX" constant="0.5" id="zff-FB-1WP"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="hQv-em-gDx" appends="YES" id="ndd-xa-oCo"/>
